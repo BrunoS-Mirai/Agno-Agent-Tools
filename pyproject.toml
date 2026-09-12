@@ -1,0 +1,20 @@
+[project]
+name = "agno-introduction"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12.13"
+dependencies = [
+    "agno>=3.0.4",
+    "groq>=1.7.0",
+    "python-dotenv>=1.2.3",
+    "tavily-python>=0.8.0",
+    "yfinance>=1.7.0",
+]
+
+[project.scripts]
+agno-introduction = "agno_introduction:main"
+
+[build-system]
+requires = ["uv_build>=0.12.8,<0.13.0"]
+build-backend = "uv_build"
